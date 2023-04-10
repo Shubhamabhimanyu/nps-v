@@ -36,30 +36,30 @@ function Header() {
           </Link>
           <Link
             href={"/schedule"} 
-            as={"/schedule/index.html"}
+           
             style={{
-              color: router?.asPath === "/schedule/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/schedule/index.html" && "underline",
+              color: router?.asPath === "/schedule" && "#d79b49",
+              textDecoration: router?.asPath === "/schedule" && "underline",
             }}
           >
             Schedule
           </Link>
           <Link
             href={"/free-roll"}
-            as={"/free-roll/index.html"}
+            
             style={{
-              color: router?.asPath === "/free-roll/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/free-roll/index.html" && "underline",
+              color: router?.asPath === "/free-roll" && "#d79b49",
+              textDecoration: router?.asPath === "/free-roll" && "underline",
             }}
           >
             Freeroll
           </Link>
           <Link
             href={"/leaderboard"}
-            as={"/leaderboard/index.html"}
+            
             style={{
-              color: router?.asPath === "/leaderboard/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/leaderboard/index.html" && "underline",
+              color: router?.asPath === "/leaderboard" && "#d79b49",
+              textDecoration: router?.asPath === "/leaderboard" && "underline",
             }}
           >
             Leaderboard
@@ -67,43 +67,43 @@ function Header() {
         
           <Link
             href={"/players-stories"}
-            as={"/players-stories/index.html"}
+           
             style={{
-              color: router?.asPath === "/players-stories/index.html" && "#d79b49",
+              color: router?.asPath === "/players-stories" && "#d79b49",
               textDecoration:
-                router?.asPath === "/players-stories/index.html" && "underline",
+                router?.asPath === "/players-stories" && "underline",
             }}
           >
             Player Stories
           </Link>
           <Link
             href={"/golden-book"}
-            as={"/golden-book/index.html"}
+           
             style={{
-              color: router?.asPath === "/golden-book/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/golden-book/index.html" && "underline",
+              color: router?.asPath === "/golden-book" && "#d79b49",
+              textDecoration: router?.asPath === "/golden-book" && "underline",
             }}
           >
             Golden Book
           </Link>
           <Link
             href={"/table-of-glory"}
-            as={"/table-of-glory/index.html"}
+           
             style={{
-              color: router?.asPath === "/table-of-glory/index.html" && "#d79b49",
+              color: router?.asPath === "/table-of-glory" && "#d79b49",
               textDecoration:
-                router?.asPath === "/table-of-glory/index.html" && "underline",
+                router?.asPath === "/table-of-glory" && "underline",
             }}
           >
             Table Of Glory
           </Link>
           <Link
             href={"/night-of-glory"}
-            as={"/night-of-glory/index.html"}
+          
             style={{
-              color: router?.asPath === "/night-of-glory/index.html" && "#d79b49",
+              color: router?.asPath === "/night-of-glory" && "#d79b49",
               textDecoration:
-                router?.asPath === "/night-of-glory/index.html" && "underline",
+                router?.asPath === "/night-of-glory" && "underline",
             }}
           >
            Night Of Glory
@@ -143,30 +143,30 @@ function Header() {
           </Link>
           <Link
             href={"/schedule"} 
-            as={"/schedule/index.html"}
+           
             style={{
-              color: router?.asPath === "/schedule/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/schedule/index.html" && "underline",
+              color: router?.asPath === "/schedule" && "#d79b49",
+              textDecoration: router?.asPath === "/schedule" && "underline",
             }}
           >
             Schedule
           </Link>
           <Link
             href={"/free-roll"}
-            as={"/free-roll/index.html"}
+            
             style={{
-              color: router?.asPath === "/free-roll/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/free-roll/index.html" && "underline",
+              color: router?.asPath === "/free-roll" && "#d79b49",
+              textDecoration: router?.asPath === "/free-roll" && "underline",
             }}
           >
             Freeroll
           </Link>
           <Link
             href={"/leaderboard"}
-            as={"/leaderboard/index.html"}
+            
             style={{
-              color: router?.asPath === "/leaderboard/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/leaderboard/index.html" && "underline",
+              color: router?.asPath === "/leaderboard" && "#d79b49",
+              textDecoration: router?.asPath === "/leaderboard" && "underline",
             }}
           >
             Leaderboard
@@ -174,43 +174,43 @@ function Header() {
         
           <Link
             href={"/players-stories"}
-            as={"/players-stories/index.html"}
+           
             style={{
-              color: router?.asPath === "/players-stories/index.html" && "#d79b49",
+              color: router?.asPath === "/players-stories" && "#d79b49",
               textDecoration:
-                router?.asPath === "/players-stories/index.html" && "underline",
+                router?.asPath === "/players-stories" && "underline",
             }}
           >
             Player Stories
           </Link>
           <Link
             href={"/golden-book"}
-            as={"/golden-book/index.html"}
+           
             style={{
-              color: router?.asPath === "/golden-book/index.html" && "#d79b49",
-              textDecoration: router?.asPath === "/golden-book/index.html" && "underline",
+              color: router?.asPath === "/golden-book" && "#d79b49",
+              textDecoration: router?.asPath === "/golden-book" && "underline",
             }}
           >
             Golden Book
           </Link>
           <Link
             href={"/table-of-glory"}
-            as={"/table-of-glory/index.html"}
+           
             style={{
-              color: router?.asPath === "/table-of-glory/index.html" && "#d79b49",
+              color: router?.asPath === "/table-of-glory" && "#d79b49",
               textDecoration:
-                router?.asPath === "/table-of-glory/index.html" && "underline",
+                router?.asPath === "/table-of-glory" && "underline",
             }}
           >
             Table Of Glory
           </Link>
           <Link
             href={"/night-of-glory"}
-            as={"/night-of-glory/index.html"}
+          
             style={{
-              color: router?.asPath === "/night-of-glory/index.html" && "#d79b49",
+              color: router?.asPath === "/night-of-glory" && "#d79b49",
               textDecoration:
-                router?.asPath === "/night-of-glory/index.html" && "underline",
+                router?.asPath === "/night-of-glory" && "underline",
             }}
           >
            Night Of Glory
