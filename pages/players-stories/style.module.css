@@ -1,0 +1,355 @@
+.mt_100 {
+    margin-top: 140px;
+    background-color: #000;
+  }
+  @media screen and (min-width: 500px){
+    .mt_100 {
+        width: 73%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 140px;
+        background-color: #000;
+      }
+  }
+.carousalContainerTestimonials {
+    display: flex;
+    margin-top: 8rem;
+    gap: 2rem;
+    width: 100%;
+    position: relative;
+    /* height: 47.8rem; */
+  }
+  
+  .cardContainerTestimonials {
+    /* width: 65.7rem;     */
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+    border-image-slice: 1;
+    transform: translateX(-0px);
+    transition: transform 250ms ease-in-out;
+    background-color: #000000;
+  }
+  
+  .cardContainerHover {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 500px) {
+    .cardContainerHover > img {
+      display: block;
+      /* position: absolute;
+      right: 50px;
+      bottom: 50px; */
+    }
+  }
+  
+  .cardContainerHover:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .cardContainerHover:hover > img {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .cardContainer > div > svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 54px;
+    color: #d79b49;
+  }
+  .cardContainerTestimonials:hover::before {
+    content: "";
+    background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(100px);
+  }
+  
+  .playerImage {
+    position: relative;
+    /* height: 20rem;
+    width: 30rem; */
+    width: 48.2rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+  }
+  
+  .testiContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .testiContent > p:first-child {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #afafaf;
+  }
+  
+  .testiContent > p:nth-child(2) {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  
+    color: #ffffff;
+  }
+  
+  .testiStats {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+  
+  .winning {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .winning:first-child {
+    padding: 0 1rem 0 0;
+    border-right: 1.5px solid #707070;
+  }
+  
+  .winning:nth-child(2) {
+    padding: 0 0 0 1rem;
+  }
+  
+  .winning > p {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #ffffff;
+    margin: 0 0 0 0.6rem;
+  }
+  
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+  
+    width: 5rem;
+    height: 5rem;
+    border: 0.5px solid transparent;
+    border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+    border-image-slice: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
+  
+  .arrowLeft {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+  }
+  
+  .arrowRight {
+    top: 50%;
+    right: -3rem;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+  }
+  
+  @media screen and (max-width: 500px) {
+    /* .arrowLeft,
+    .arrowRight {
+      display: none;
+    } */
+    .arrowLeft,
+    .arrowRight {
+      position: absolute;
+    
+      width: 5rem;
+      height: 5rem;
+      border: 0.5px solid transparent;
+      border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+      border-image-slice: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9;
+      background: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+    }
+    .arrowLeft {
+      top: 50%;
+      left: 3rem;
+      transform: translate(-50%, -50%);
+    }
+    
+    .arrowRight {
+      top: 50%;
+      right: -2rem;
+      transform: translate(-50%, -50%);
+    }
+    
+    .cardContainerTestimonials {
+      width: 35.2rem;
+      height: 18rem;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid transparent;
+      border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+      border-image-slice: 1;
+      transform: translateX(-0px);
+      transition: transform 250ms ease-in-out;
+    }
+    .cardContainerTestimonials::before {
+      content: "";
+      background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+      position: absolute;
+      height: 50%;
+      width: 100%;
+      z-index: -1;
+      filter: blur(100px);
+    }
+    .cardContainerHover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .cardContainerHover > img {
+      display: block;
+    }
+    .playerImage {
+      position: relative;
+      /* width: 32rem; */
+      height: 16rem;
+    }
+  }
+  
+  .cardContainerVideoOuter {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+  }
+  
+  .cardContainerVideoInner {
+    width: 40vw;
+    position: relative;
+    height: 50vh;
+  }
+  
+  .cardContainerVideoInner > svg {
+    position: absolute;
+    top: -7rem;
+    right: -7rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1650px) and (min-width: 1300px) {
+    .cardContainerVideoInner {
+      width: 50vw;
+      position: relative;
+      height: 50vh;
+    }
+  }
+  @media screen and (max-width: 1300px) and (min-width: 768px) {
+    .cardContainerVideoInner {
+      width: 60vw;
+      position: relative;
+      height: 50vh;
+    }
+    .cardContainerVideoInner > svg {
+      position: absolute;
+      top: -5rem;
+      right: -5rem;
+      color: white;
+      font-size: 4rem;
+      cursor: pointer;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) and (min-width: 940px) {
+    .cardContainerVideoInner {
+      width: 70vw;
+      position: relative;
+      height: 50vh;
+    }
+    .cardContainerVideoInner > svg {
+      position: absolute;
+      top: -5rem;
+      right: -5rem;
+      color: white;
+      font-size: 4rem;
+      cursor: pointer;
+    }
+  }
+  
+  @media screen and (max-width: 940px) and (min-width: 500px) {
+    .cardContainerVideoInner {
+      width: 80vw;
+      position: relative;
+      height: 50vh;
+    }
+    .cardContainerVideoInner > svg {
+      position: absolute;
+      top: -5rem;
+      right: -5rem;
+      color: white;
+      font-size: 4rem;
+      cursor: pointer;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .cardContainerVideoInner {
+      width: 90%;
+      position: relative;
+      height: 33vh;
+    }
+    .cardContainerVideoInner > svg {
+      position: absolute;
+      top: -6rem;
+      right: 0rem;
+      color: white;
+      font-size: 4rem;
+      cursor: pointer;
+    }
+  
+    .cardContainerImage {
+      aspect-ratio: 218/256;
+    }
+  }
+  

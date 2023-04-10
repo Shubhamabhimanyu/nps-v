@@ -1,0 +1,302 @@
+/* Carousal Style    */
+
+.carousalContainer {
+  display: flex;
+  margin-top: 80px;
+  gap: 20px;
+
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid transparent;
+  border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.arrowLeft {
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+}
+
+.arrowRight {
+  top: 50%;
+  right: 0rem;
+  transform: translate(-50%, -50%);
+}
+
+/* Card style   */
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 0.5px solid transparent;
+  border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  border-image-slice: 1;
+  transform: translateX(-0px);
+  transition: transform 250ms ease-in-out;
+  background-color: black;
+  position: relative;
+  height: fit-content;
+  width: 30.1rem;
+  height: 33.6rem;
+}
+
+.cardContainerImage {
+  position: relative;
+  width: 34.1rem;
+
+  object-fit: contain;
+  object-position: center;
+  aspect-ratio: 44/ 45;
+  cursor: pointer;
+}
+.cardContainerHover {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainerHover > img {
+  background-color: #000;
+  display: block;
+}
+.cardContainerHover:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cardContainerVideoOuter {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.cardContainerVideoInner {
+  width: 40vw;
+  position: relative;
+  height: 50vh;
+}
+
+.cardContainerVideoInner > svg {
+  position: absolute;
+  top: -7rem;
+  right: -7rem;
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1650px) and (min-width: 1300px) {
+  .cardContainerVideoInner {
+    width: 50vw;
+    position: relative;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  .cardContainerVideoInner {
+    width: 60vw;
+    position: relative;
+    height: 50vh;
+  }
+  .cardContainerVideoInner > svg {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 940px) {
+  .cardContainerVideoInner {
+    width: 70vw;
+    position: relative;
+    height: 50vh;
+  }
+  .cardContainerVideoInner > svg {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 940px) and (min-width: 500px) {
+  .cardContainerVideoInner {
+    width: 80vw;
+    position: relative;
+    height: 50vh;
+  }
+  .cardContainerVideoInner > svg {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainerVideoInner {
+    width: 90%;
+    position: relative;
+    height: 33vh;
+  }
+  .cardContainerVideoInner > svg {
+    position: absolute;
+    top: -6rem;
+    right: 0rem;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
+  .cardContainerImage {
+    aspect-ratio: 218/256;
+  }
+}
+.cardContainerHover:hover > img {
+  display: block;
+  cursor: pointer;
+}
+
+.cardContainer > div > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 54px;
+  color: #d79b49;
+}
+
+.cardContainer:hover::before {
+  content: "";
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  position: absolute;
+  height: 80%;
+  width: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+.carousalContainerGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+}
+
+.carousalContainerIframe {
+  width: 28.426rem;
+  height: 26.126rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cardContainer > span {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #afafaf;
+  margin: 33px 0px 9px 0px;
+  padding-left: 12px;
+  z-index: 2;
+}
+
+.cardContainer > p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: #d9d9d9;
+  z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+  .carousalContainer {
+    display: flex;
+    margin-top: 8rem;
+    gap: 16px;
+
+    width: 100%;
+    position: relative;
+    height: fit-content;
+
+    /* overflow: hidden; */
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+
+  /* Card style   */
+  .cardContainer {
+    width: 23.2rem;
+
+    height: 25.9rem;
+  }
+
+  .cardContainer > span {
+    font-size: 12px;
+    line-height: 21px;
+    padding-left: 9px;
+    margin: 29px 0px 4px 0px;
+  }
+
+  .cardContainer > p {
+    font-size: 16px;
+    line-height: 24px;
+
+    padding-left: 9px;
+  }
+}

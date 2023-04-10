@@ -1,0 +1,26 @@
+.terms__container {
+  margin: 12rem auto 10rem auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.terms__container > ul > li {
+  margin: 1rem 0;
+}
+
+.terms__container > ul > li > a {
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.terms__container > ul > li > p {
+  margin: 1rem 0;
+}

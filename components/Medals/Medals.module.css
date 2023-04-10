@@ -1,0 +1,32 @@
+.image__bggradient::before {
+  content: "";
+  background: linear-gradient(228.8deg, #cc7d16, #fdec24 101.3%);
+  position: absolute;
+  height: 80%;
+  width: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  filter: blur(100px);
+}
+.medal__title {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  text-align: center;
+  background: linear-gradient(269.35deg, #d79b49 38.04%, #fef472 100%);
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.medal__title > span {
+  font-size: 3rem;
+  line-height: 3.1rem;
+}

@@ -1,0 +1,108 @@
+.carousalContainerTournament {
+  display: flex;
+  margin-top: 8rem;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+  /* height: 47.8rem; */
+}
+
+.cardContainerTournament {
+  display: flex;
+  /* background-image: url(../../../assets/homepage/tournament/Group\ 172.png); */
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-0px);
+  transition: transform 250ms ease-in-out;
+  background-color: black;
+  height: 39rem;
+  transform: translateX(-0px);
+  transition: transform 250ms ease-in-out;
+  padding: 10.9rem 5.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0.5px solid transparent;
+  border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  border-image-slice: 1;
+  position: relative;
+}
+
+/* .cardContainerTournament:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+
+  top: 0;
+  right: 10px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  border-image-slice: 1;
+
+  width: 0;
+  height: 0;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent;
+} */
+
+.cardContainerTournament:hover::before {
+  content: "";
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  position: absolute;
+  height: 80%;
+  width: 70%;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+.carousalContainerTournamentImage {
+  position: relative;
+  width: 23rem;
+  height: 26rem;
+}
+
+.carousalContainerTournamentGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+
+  width: 5rem;
+  height: 5rem;
+  border: 0.5px solid transparent;
+  border-image: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.arrowLeft {
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+}
+
+.arrowRight {
+  top: 50%;
+  right: -3rem;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+}

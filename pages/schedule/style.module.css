@@ -1,0 +1,183 @@
+.mt_100 {
+  margin-top: 140px;
+  background-color: #000;
+}
+.table_bg_logo {
+  position: relative;
+  z-index: 9;
+}
+.table_bg_logo:after {
+  background: url("https://web.pokerbaazicdn.com/asset/images/nps2023/table-bg-nps-logo.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170px;
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+  opacity: 0.2;
+}
+.table {
+  margin-bottom: 0rem !important;
+}
+@media only screen and (max-width: 600px) {
+  .res_mbl {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .res_web {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .border_bottum {
+    margin-bottom: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .border_bottum {
+    margin-bottom: 0.5rem !important;
+  }
+}
+.schedule_table {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(202, 151, 43, 1) 27%,
+    rgba(202, 151, 43, 1) 67%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+.schedule_tr {
+  color: white;
+}
+@media (max-width: 768px) {
+  .mobile_res {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.baazirewards__table {
+  text-align: center;
+  background: black;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  border: 3px solid rgba(202, 151, 43, 1);
+}
+.schedule__contianer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 80%;
+
+  margin: 20rem auto;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 80vw;
+  aspect-ratio: 16/5;
+}
+
+@media screen and (max-width: 746px) {
+  .schedule__contianer {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    margin: 10rem auto 5rem auto;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .imageContainer {
+    position: relative;
+    width: 90%;
+    aspect-ratio: 16/5;
+  }
+}
+
+/* download button */
+.banner__btn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4.3rem;
+  width: 21rem;
+  margin: 1rem 0 0 0;
+}
+
+.banner__btn__wrapper > a {
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+
+  cursor: pointer;
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  /* border: 1px solid #fff; */
+}
+
+.banner__btn__wrapper > a:hover {
+  background: linear-gradient(8.8deg, #cc7d16 0%, #fdec24 -101.3%);
+  color: #000000;
+}
+
+.banner__btn__overlay {
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  right: -3%;
+  bottom: -10%;
+  border: 1px solid #f5f5f5;
+  /* clip-path: polygon(
+    20% 0%,
+    100% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    0% 100%,
+    0% 80%,
+    0% 20%
+  ); */
+  z-index: 5;
+  background-color: transparent;
+  pointer-events: none;
+}
+@media screen and (max-width: 746px){
+  .mt_100{
+    margin-top: 70px;
+  }
+  .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 10px;
+  }
+ 
+  
+}
+@media screen and (min-width: 746px){
+ .cons{
+   display: flex;
+   justify-content: space-between;
+  }
+}

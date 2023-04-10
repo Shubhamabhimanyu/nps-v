@@ -1,0 +1,168 @@
+.goldenBookContainer {
+  margin: 7.4rem auto;
+  padding-bottom: 0rem;
+}
+
+.goldenBookButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  padding: 4rem;
+  gap: 3.1rem;
+}
+
+.goldenBookButtonContainer > button {
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  width: 13.1rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  /* identical to box height */
+
+  color: #000000;
+  outline: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.goldenBookButtonContainer > button:hover {
+  background: linear-gradient(8.8deg, #cc7d16 0%, #fdec24 -101.3%);
+}
+
+.goldenBookButtonContainer > button > svg {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  /* width: 140px; */
+}
+
+.banner__btn__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 5.3rem;
+  width: 16.4rem;
+  margin: 4rem 0 0 0;
+}
+
+.banner__btn__wrapper > button {
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+
+  cursor: pointer;
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  font-size: 1.8rem;
+
+  /* border: 1px solid #fff; */
+}
+
+.banner__btn__wrapper > button:hover {
+  background: linear-gradient(8.8deg, #cc7d16 0%, #fdec24 -101.3%);
+}
+
+.banner__btn__overlay {
+  position: absolute;
+  top: -10%;
+  left: -3%;
+  right: -3%;
+  bottom: -10%;
+  border: 1px solid #f5f5f5;
+  /* clip-path: polygon(
+    20% 0%,
+    100% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    0% 100%,
+    0% 80%,
+    0% 20%
+  ); */
+  z-index: 5;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.goldenBookImageContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.goldenBookImageContainerUpper {
+  position: relative;
+}
+
+.goldenBookImageContainerLower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goldenBookImageContainerLower > div {
+  position: relative;
+}
+
+/* .goldenBookButtonContainer > button > div {
+  position: absolute;
+  border: 1px solid #fff;
+  inset: 0;
+  width: 9.5rem;
+  height: 5.2rem;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  margin: auto;
+} */
+
+@media screen and (max-width: 850px) and (min-width: 500px) {
+  .goldenBookImageContainerUpper {
+    margin-bottom: 5rem;
+  }
+  .goldenBookImageContainerLower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .goldenBookContainer {
+    margin: 0rem auto;
+    padding-bottom: 0rem;
+  }
+
+  .goldenBookImageContainerUpper {
+    position: relative;
+
+    margin-bottom: 5rem;
+  }
+  .goldenBookImageContainerLower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .goldenBookImageContainerLower > div {
+    position: relative;
+    width: 90%;
+  }
+}

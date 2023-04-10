@@ -1,0 +1,159 @@
+.inspire__wrapper {
+  padding: 0 18rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.inspire__large {
+  /* padding: 10.7rem 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inspire__large__tags {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.inspire__large__mono__tag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.inspire__large__mono__tag > span {
+  font-size: 1.6rem;
+  font-family: var(--secondary-font);
+  line-height: 2.4rem;
+  color: #3e3e3e;
+}
+
+.inspire__large__mono__tag > h4 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 6.2rem;
+  color: #3e3e3e;
+  cursor: pointer;
+  margin: 0 0 1rem 1rem;
+  overflow: visible;
+}
+
+.inspire__large__mono__tag > h4:hover {
+  transform: translateX(15px);
+  transition: all 0.3s ease;
+}
+
+.inspire__large__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.inspire__large__image {
+  position: relative;
+
+  width: 48rem;
+  height: 60rem;
+}
+
+.selected__font {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 6.2rem;
+  background: linear-gradient(228.8deg, #cc7d16 0%, #fdec24 101.3%);
+  /* color: red; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 5;
+  background-color: transparent;
+
+  text-shadow: 0 0 50px #fdec24;
+}
+
+.inspire__large__description {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 0 6rem 0;
+}
+
+.inspire__large__description > h5 {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  display: flex;
+  align-items: center;
+  color: #d9d9d9;
+}
+
+.inspire__large__description > h5 > span {
+  margin: 0 1rem;
+}
+
+.inspire__large__description > p {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #afafaf;
+  margin: 1.1rem 0 0 0;
+}
+
+.inspire__small {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .inspire__small {
+    display: unset;
+  }
+
+  .inspire__large {
+    display: none;
+  }
+
+  .inspire__wrapper {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .inspire__large__image {
+    width: 38rem;
+    height: 46rem;
+  }
+
+  .inspire__wrapper {
+    padding: 0 12rem;
+  }
+
+  .inspire__large__content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1024px) {
+  .inspire__large__image {
+    width: 41rem;
+    height: 48.3rem;
+  }
+}
+
+@media screen and (max-width: 1668px) and (min-width: 1440px) {
+  .inspire__large__image {
+    width: 44rem;
+    height: 48.3rem;
+  }
+}

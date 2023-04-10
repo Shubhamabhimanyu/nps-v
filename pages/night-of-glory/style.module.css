@@ -1,0 +1,14 @@
+.mt_100 {
+    margin-top: 140px;
+    background-color: #000;
+  }
+
+  @media screen and (min-width: 500px){
+    .container{
+        width: 70% !important;
+    }
+  }
+  .img_border{
+border-radius: 10px;
+border: 2px solid rgba(202, 151, 43, 1);
+  }
